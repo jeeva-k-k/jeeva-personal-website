@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Instrument_Sans, Newsreader } from "next/font/google";
+import { SchemaMarkup } from "@/components/seo/schema-markup";
 import "./globals.css";
 
 const sansFont = Instrument_Sans({
@@ -20,6 +21,35 @@ export const metadata: Metadata = {
   description:
     "Portfolio of Jeeva K K, Managing Director of Zenin Hive, cloud engineer, AI consultant, WordPress developer, SEO specialist, digital marketing strategist, physicist, and independent theoretical particle physics researcher.",
   metadataBase: new URL("https://jeevakk.com"),
+  keywords: [
+    "Jeeva K K",
+    "Zenin Hive",
+    "Managing Director Zenin Hive",
+    "Bangalore Cloud Engineer",
+    "AI Consultant Bangalore",
+    "WordPress Developer India",
+    "SEO Specialist Karnataka",
+    "IT Support Consultant",
+    "Theoretical Physics Researcher",
+    "LaTeX Formatting",
+    "Google Ads Campaign Manager",
+    "Azure Cloud Administrator",
+    "Microsoft 365 Entra ID"
+  ],
+  authors: [{ name: "Jeeva K K", url: "https://jeevakk.com" }],
+  creator: "Jeeva K K",
+  publisher: "Zenin Hive",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   openGraph: {
     title: "Jeeva K K | Managing Director, Zenin Hive",
     description:
@@ -45,6 +75,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${sansFont.variable} ${serifFont.variable} h-full antialiased`}>
+      <head>
+        <SchemaMarkup />
+      </head>
       <body className="min-h-full flex flex-col font-sans">{children}</body>
     </html>
   );
