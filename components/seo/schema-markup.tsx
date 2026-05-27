@@ -43,6 +43,7 @@ export function SchemaMarkup() {
 
   return (
     <script
+      suppressHydrationWarning
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
     />
