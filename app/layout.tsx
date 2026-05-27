@@ -1,20 +1,6 @@
 import type { Metadata } from "next";
-import { Instrument_Sans, Newsreader } from "next/font/google";
 import { SchemaMarkup } from "@/components/seo/schema-markup";
 import "./globals.css";
-
-const sansFont = Instrument_Sans({
-  subsets: ["latin"],
-  variable: "--font-sans",
-  display: "swap",
-});
-
-const serifFont = Newsreader({
-  subsets: ["latin"],
-  style: ["normal", "italic"],
-  variable: "--font-serif",
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   title: "Jeeva K K | Managing Director, Zenin Hive",
@@ -74,7 +60,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${sansFont.variable} ${serifFont.variable} h-full antialiased`}>
+    <html lang="en" className="h-full antialiased">
       <head>
         <SchemaMarkup />
       </head>
@@ -82,4 +68,3 @@ export default function RootLayout({
     </html>
   );
 }
-

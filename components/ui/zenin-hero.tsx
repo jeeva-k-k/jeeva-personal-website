@@ -71,8 +71,8 @@ export function WordsPullUpMultiStyle() {
 
 export function ZeninHero() {
   return (
-    <section id="home" className="min-h-screen bg-[#f8fafc] px-3 py-3 text-[#f3f4f6] sm:px-5 sm:py-5">
-      <div className="hero-shell relative min-h-[calc(100vh-24px)] overflow-hidden rounded-[28px] border border-slate-800 bg-[#030712] shadow-2xl shadow-slate-950/25 sm:min-h-[calc(100vh-40px)] sm:rounded-[36px]">
+    <section id="home" className="min-h-screen bg-[#e8ddc7] px-3 py-3 text-[#f7efe0] sm:px-5 sm:py-5">
+      <div className="hero-shell relative min-h-[calc(100vh-24px)] overflow-hidden rounded-[28px] border border-[#2d3d39] bg-[#111a18] shadow-2xl shadow-slate-950/25 sm:min-h-[calc(100vh-40px)] sm:rounded-[36px]">
         <div className="hero-aurora" aria-hidden="true" />
         <video
           className="absolute inset-0 z-[1] h-full w-full object-cover opacity-35 mix-blend-screen"
@@ -90,18 +90,18 @@ export function ZeninHero() {
           ))}
         </div>
         <div className="hero-noise" aria-hidden="true" />
-        <div className="absolute inset-0 z-[4] bg-[linear-gradient(180deg,rgba(3,7,18,0.18),rgba(3,7,18,0.22)_38%,rgba(3,7,18,0.88))]" />
+        <div className="absolute inset-0 z-[4] bg-[linear-gradient(180deg,rgba(17,26,24,0.18),rgba(17,26,24,0.22)_38%,rgba(17,26,24,0.88))]" />
 
         <nav
           aria-label="Hero navigation"
-          className="absolute left-1/2 top-5 z-20 hidden -translate-x-1/2 rounded-full border border-white/10 bg-black/40 px-3 py-2 shadow-xl shadow-slate-950/20 backdrop-blur-xl lg:block"
+          className="absolute left-1/2 top-5 z-20 hidden -translate-x-1/2 rounded-full border border-white/15 bg-[#0c1211]/70 px-3 py-2 shadow-xl shadow-slate-950/20 backdrop-blur-xl lg:block"
         >
           <ul className="flex items-center gap-1">
             {navItems.map((item) => (
               <li key={item.href}>
                 <a
                   href={item.href}
-                  className="rounded-full px-4 py-2 text-sm font-medium text-slate-300 transition hover:bg-white/10 hover:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500/60"
+                  className="rounded-full px-4 py-2 text-sm font-medium text-[#e8ddc7] transition hover:bg-[#e8ddc7] hover:text-[#111a18] focus:outline-none focus:ring-2 focus:ring-teal-300/60"
                 >
                   {item.label}
                 </a>
@@ -112,7 +112,7 @@ export function ZeninHero() {
 
         <div className="relative z-10 flex min-h-[calc(100vh-24px)] flex-col justify-between p-5 sm:min-h-[calc(100vh-40px)] sm:p-8 lg:p-10">
           <div className="flex items-start justify-between gap-6">
-            <a href="#home" className="rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm font-semibold text-white shadow-sm backdrop-blur">
+            <a href="#home" className="rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm font-semibold text-[#f7efe0] shadow-sm backdrop-blur">
               Jeeva K K
             </a>
             <div className="flex gap-2">
@@ -124,22 +124,22 @@ export function ZeninHero() {
 
           <div className="grid items-end gap-8 lg:grid-cols-[1.1fr_0.9fr]">
             <div>
-              <p className="mb-5 text-sm font-semibold uppercase tracking-[0.28em] text-indigo-400">
+              <p className="mb-5 text-sm font-semibold uppercase tracking-[0.28em] text-[#61d5c7]">
                 Portfolio / Founder / Cloud / AI / Physics
               </p>
-              <h1 className="font-serif max-w-6xl text-balance text-5xl font-semibold leading-[0.94] tracking-normal text-white sm:text-6xl lg:text-7xl xl:text-8xl">
+              <h1 className="font-serif max-w-6xl text-balance text-5xl font-semibold leading-[0.94] tracking-normal text-[#f7efe0] sm:text-6xl lg:text-7xl xl:text-8xl">
                 <span className="block hero-title-line">Jeeva K K</span>{" "}
                 <span className="block hero-title-line hero-title-line-delay-1">
-                  <span className="text-slate-100">Cloud.</span>{" "}
-                  <span className="text-indigo-400">AI.</span>{" "}
-                  <span className="text-rose-400">Physics.</span>
+                  <span className="text-[#f4ead7]">cloud</span>{" "}
+                  <span className="text-[#61d5c7]">AI</span>{" "}
+                  <span className="text-[#9fb7ff]">physics</span>
                 </span>{" "}
-                <span className="block hero-title-line hero-title-line-delay-2">Digital execution.</span>
+                <span className="block hero-title-line hero-title-line-delay-2">and digital work.</span>
               </h1>
             </div>
 
             <div className="max-w-xl justify-self-end">
-              <p className="text-base leading-8 text-slate-300 sm:text-lg">
+              <p className="text-base leading-8 text-[#e4d8c2] sm:text-lg">
                 I&apos;m Jeeva K K, Managing Director of Zenin Hive, cloud engineer, AI consultant, WordPress developer, SEO specialist, and physicist. This portfolio collects what I do, what I have worked on, and what I am currently learning across technology, marketing, automation, and theoretical physics.
               </p>
               <div className="mt-7 flex flex-col gap-3 sm:flex-row">
@@ -154,11 +154,11 @@ export function ZeninHero() {
             </div>
           </div>
 
-          <div className="mt-10 flex flex-col justify-between gap-5 border-t border-white/10 pt-5 text-sm text-slate-400 md:flex-row md:items-center">
+          <div className="mt-10 flex flex-col justify-between gap-5 border-t border-white/15 pt-5 text-sm text-[#dacdb8] md:flex-row md:items-center">
             <p className="max-w-md">
               Based in Bangalore, working across Zenin Hive, cloud operations, AI workflows, websites, SEO, and independent physics research.
             </p>
-            <p className="text-slate-500">Founder work / Technical skills / Research curiosity</p>
+            <p className="text-[#b9ab95]">Founder work / Technical skills / Research curiosity</p>
           </div>
         </div>
       </div>

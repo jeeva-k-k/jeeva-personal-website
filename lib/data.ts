@@ -9,13 +9,14 @@ export const siteConfig = {
 };
 
 export const navItems = [
-  { label: "Home", href: "#home" },
-  { label: "Profile", href: "#about" },
-  { label: "Work", href: "#zenin-hive" },
-  { label: "Skills", href: "#services" },
-  { label: "AI", href: "#ai-automation" },
-  { label: "Research", href: "#research" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "/#home" },
+  { label: "Profile", href: "/#about" },
+  { label: "Work", href: "/#zenin-hive" },
+  { label: "Skills", href: "/#services" },
+  { label: "AI", href: "/#ai-automation" },
+  { label: "Research", href: "/#research" },
+  { label: "Blog", href: "/blog" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 export const services = [
